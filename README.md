@@ -24,10 +24,12 @@ This project helps students easily calculate their **Semester GPA** and **Overal
 
 ## 📸 Screenshots
 ### 🔹 GPA Calculator  
-![GPA Screenshot](https://via.placeholder.com/800x400?text=GPA+Calculator+UI)
+<img width="1617" height="1608" alt="image" src="https://github.com/user-attachments/assets/2d498845-d659-4764-8103-40ae03ce3449" />
+
 
 ### 🔹 CGPA Calculator  
-![CGPA Screenshot](https://via.placeholder.com/800x400?text=CGPA+Calculator+UI)
+<img width="1617" height="1608" alt="image" src="https://github.com/user-attachments/assets/fe8a014a-8ca5-4a8b-9ff6-477ad5633d04" />
+
 
 ---
 
@@ -101,17 +103,9 @@ Your support motivates me to build more cool projects ❤️
 
 ## 👨‍💻 Author
 
-**Sufian Liaqat**
+**M.Sufian**
 🚀 BSCS Graduate | Full Stack Developer | React & Node.js Enthusiast
-🔗 [LinkedIn](https://www.linkedin.com) | [GitHub](https://github.com)
+🔗 [) | [GitHub](https://github.com/Sufyan2256462)
 
 ```
 
----
-
-⚡ Tip:  
-- Bas `https://github.com/your-username/cgpa-gpa-calculator.git` ko apne repo link se replace kar lena.  
-- Screenshots ke jagah apne project ka **UI ka screenshot** daal lena.  
-
-👉 Kya aap chahte ho main aap ke liye **LinkedIn post ka content bhi likh dun** (short + professional style) jo aap repo ke saath share kar sako?
-```
