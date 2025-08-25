@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>GPA & CGPA Calculator</title>
+  <link rel="stylesheet" href="./style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>🎓 GPA & CGPA Calculator</h1>
+      <p>Add courses per semester, calculate GPA & CGPA.</p>
+    </header>
+
+    <section class="card">
+      <h2>Grade Scale</h2>
+      <div id="grade-scale" class="grid"></div>
+    </section>
+
+    <section class="card">
+      <div class="row space-between">
+        <h2>Semesters</h2>
+        <div class="controls">
+          <button id="add-semester">+ Add Semester</button>
+          <button id="reset">↺ Reset</button>
+        </div>
+      </div>
+      <div id="semesters"></div>
+    </section>
+
+    <section class="card">
+      <div class="row">
+        <button id="calc-gpa">Calculate Selected Semester GPA</button>
+        <div class="result" id="gpa-result">GPA: —</div>
+      </div>
+      <div class="row">
+        <button id="calc-cgpa">Calculate CGPA (All Semesters)</button>
+        <div class="result" id="cgpa-result">CGPA: —</div>
+      </div>
+    </section>
+
+    <footer>
+      <p>Made with ❤️ • Run: <code>cd server && npm i && npm start</code></p>
+    </footer>
+  </div>
+
+  <template id="semester-template">
+    <div class="semester">
+      <div class="row space-between">
+        <div class="row">
+          <input type="radio" name="selectedSemester" class="select-semester"/>
+          <h3 contenteditable="true" class="semester-title">Semester</h3>
+        </div>
+        <div class="controls">
+          <button class="add-course">+ Course</button>
+          <button class="remove-semester danger">Remove</button>
+        </div>
+      </div>
+      <div class="courses">
+        <!-- Course rows go here -->
+      </div>
+      <div class="row">
+        <button class="calc-sem-gpa ghost">Calculate GPA</button>
+        <div class="result small sem-gpa">GPA: —</div>
+      </div>
+    </div>
+  </template>
+
+  <template id="course-template">
+    <div class="course">
+      <input class="course-name" placeholder="Course name" />
+      <input class="course-credits" placeholder="Credits" type="number" min="0" step="0.5"/>
+      <select class="course-grade">
+        <!-- filled dynamically -->
+      </select>
+      <button class="remove-course danger ghost">Remove</button>
+    </div>
+  </template>
+
+  <script src="./app.js" type="module"></script>
+</body>
+</html>
